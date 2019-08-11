@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Student Data</title>
+</head>
+<style type="text/css">
+	body{
+		background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0.5)),url(1871_Tramonto.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	ul li a{
+		color: blue;
+	}
+	td{
+		color: yellow;
+	}
+	marquee{
+		color: green;
+	}
+
+</style>
+<body>
+
+    <marquee>
+        <h2> Welcome-----!!!</h2>
+    </marquee>
+    <form action="PHP/insert.php" method="POST">
+        <div class="collapse navbar-collapse" id="navbarbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="insert.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="update.html">Update</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="delete.html">Delete</a>
+                </li>
+            </ul>
+        </div>
+        <center>
+            <table border="1" width="400" height="300">
+                <tr>
+                    <td colspan="5" align="center" bgcolor="grey">Student's Informations</td>
+                </tr>
+                <tr>
+                    <td align="right">Name:</td>
+                    <td align="center"><input type="text" name="name" placeholder="Enter Your Name" disabled="disabled"></td>
+                </tr>
+                <tr>
+                    <td align="right">Father's Name:</td>
+                    <td align="center"><input type="text" name="fname" placeholder="Enter Your Father's Name" disabled="disabled"></td>
+                </tr>
+                <tr>
+                    <td align="right">Roll Number:</td>
+                    <td align="center"><input type="text" name="roll" placeholder="Enter Your Roll Number"></td>
+                </tr>
+                <tr>
+                    <td align="right">Result:</td>
+                    <td align="center"><input type="text" name="result" disabled="disabled" placeholder="Result"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="5" align="center" bgcolor="gray"><input type="submit" name="search" value="Search"></td>
+                </tr>
+            </table>
+        </center>
+    </form>
+</body>
+
+</html>
